@@ -2,19 +2,9 @@
 
 - https://github.com/tailwindlabs/tailwindcss-jit
 
-## Features
+# Responsive Design Pattern
 
-- Easy configuration using `config.js`
-- Live reload on file/assets changes using `browser-sync`
-- SCSS support
-- Minification of styles and scripts on production build
-- Minification of images on production build using `imagemin`
-- Includes following tailwindcss plugins (can be disabled/enabled with `config.js`)
-
-  - [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
-  - ~~[@tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)~~ - Utility is included by default in Tailwind v3.3 release
-  - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
-  - [@tailwindcss/container-queries](https://github.com/tailwindlabs/tailwindcss-container-queries)
+- Responsive Font sizes: https://utopia.fyi/type/calculator
 
 ## Quick Start
 

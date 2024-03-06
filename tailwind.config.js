@@ -19,7 +19,20 @@ module.exports = {
   content: ["./src/**/*.{html,js,php}"],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "primary-bg": "var(--primary-bg)",
+        "card-bg": "var(--card-bg)",
+      },
+      fontSize: {
+        "fluid-28-48": "var(--fluid-28-48)",
+        "fluid-25-32": "var(--fluid-25-32)",
+      },
+      spacing: {
+        sidebar: "var(--sidebar-spacing)",
+        "header-height": "var(--header-height)",
+      },
+    },
   },
   plugins: plugins,
 };

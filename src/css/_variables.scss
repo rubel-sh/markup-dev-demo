@@ -1,0 +1,13 @@
+:root {
+  // COLORS
+  --primary-bg: #171b1a;
+  --card-bg: #171b1a;
+
+  //   FONT-SIZES
+  --fluid-28-48: clamp(1.75rem, 1.3152rem + 2.1739vi, 3rem);
+  --fluid-25-32: clamp(1.5625rem, 1.4103rem + 0.7609vi, 2rem);
+
+  // LAYOUT SPACING
+  --sidebar-spacing: 92px;
+  --header-height: 105px;
+}

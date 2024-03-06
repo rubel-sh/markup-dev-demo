@@ -3,10 +3,66 @@
 @tailwind utilities;
 
 @layer components {
-  .bg-tiles {
-    background-size: 73px 73px;
-    background-image: linear-gradient(currentColor 1px, transparent 1px),
-      linear-gradient(to right, currentColor 1px, transparent 1px);
-    @apply -m-0.5;
+  .container {
+    @apply max-w-[1340px] mx-auto bg-primary-bg;
+  }
+
+  .scroll-container {
+    @apply pl-6 pt-5 pr-3 lg:pl-12 lg:pt-10 lg:pr-9;
+  }
+
+  .largest-text {
+    @apply text-fluid-28-48 font-bold;
+  }
+
+  .logo-text {
+    @apply text-fluid-25-32 font-bold;
+  }
+
+  .gradient-outline-btn {
+    --gradient-color-start: #f5bd4d;
+    --gradient-color-end: #f89222;
+
+    background-color: black;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(
+      to right,
+      var(--gradient-color-start),
+      var(--gradient-color-end)
+    );
+    border: 1px solid transparent;
+    border-image: linear-gradient(
+      to right,
+      var(--gradient-color-start),
+      var(--gradient-color-end)
+    );
+    border-image-slice: 1;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent;
+  }
+
+  .gradient-filled-btn {
+    @apply bg-gradient-to-tr from-[#F5BD4D] to-[#F89222] p-[1px] grid place-items-center;
+    span {
+      @apply text-white block px-6 py-3 text-base font-bold;
+    }
+  }
+
+  .vertical-texts {
+    writing-mode: vertical-lr;
+    @apply text-[#A5A5A5] text-sm;
+  }
+}
+
+@layer utilities {
+  .white-shadow {
+    box-shadow: 0 10px 25px #ffffff1a;
   }
 }

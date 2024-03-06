@@ -1,1 +1,43 @@
 //All styles can be added here.
+
+// RESET DEFAULT STYLES
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-image: url("/img/bg_lines.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-color: var(--primary-bg);
+  overflow-x: hidden;
+  color: white;
+}
+
+// <!-- PROFILE SECTION -->
+
+.left-sb {
+  // background-image: url("/img/left-rectangle.png");
+  // background-size: cover;
+  // background-repeat: repeat-y;
+  // background-color: var(--primary-bg);
+
+  @apply w-sidebar flex flex-col gap-y-1 items-center;
+}
+
+.navs {
+  @apply flex justify-between items-center bg-[#121414];
+}
+
+// <!-- RIGHT SIDEBAR -->
+.right-sb {
+  background-image: url("img/left-rectangle.png");
+}

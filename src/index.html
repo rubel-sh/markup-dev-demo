@@ -4,11 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Gulp with TailwindCSS v3</title>
+    <title>Daryl Smith | UI/UX designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
-  <body class="bg-gray-50">
-    <div class="bg-cyan-500 w-10 h-10 text-slate-800"></div>
+  <body class="">
+    <div class="container white-shadow flex bg-primary-bg">
+      <!-- PROFILE SECTION -->
+      <div>
+        <a
+          href="#"
+          class="min-w-max flex items-center h-header-height pl-sidebar bg-[#121414] border-r border-[#353535]"
+        >
+          <div class="flex flex-col leading-none">
+            <div class="logo-text">
+              Daryl <span class="gradient-text">Smith</span>
+            </div>
+            <span class="text-xs md:text-lg text-[#C2C2C2]"
+              >UI/UX designer</span
+            >
+          </div>
+        </a>
+
+        <div class="flex items-center">
+          <div class="relative w-sidebar">
+            <!-- SIDEBAR -->
+            <ul class="flex flex-col items-center">
+              <li>H</li>
+              <li>P</li>
+              <li>L</li>
+              <li>X</li>
+            </ul>
+            <!-- <img src="img/left-rectangle.png" alt="_" class="pt-30 w-sidebar" /> -->
+          </div>
+          <!-- <img src="img/left-rectangle.png" alt="_" /> -->
+
+          <!-- PROFILE PICTURE -->
+          <div class="profile-picture">
+            <img
+              src="img/profile_image.png"
+              width="368"
+              height="504"
+              class="bg-black"
+              alt="Daryl Smith"
+            />
+            <div class="social-media"></div>
+          </div>
+        </div>
+      </div>
+
+      <main class="w-full">
+        <!-- HEADER NAVS -->
+        <header>
+          <nav class="navs h-header-height pr-sidebar">
+            <div class="home">Home</div>
+            <button class="gradient-outline-btn rounded-[50px]">
+              <span class="rounded-[50px]">Talk To Me</span>
+            </button>
+          </nav>
+        </header>
+
+        <div class="grid grid-cols-[1fr_auto]">
+          <div class="scroll-container">
+            <!-- HERO SECTION -->
+            <section>
+              <div class="">
+                <h3 class="gradient-text font-bold text-sm md:text-base mb-2">
+                  INTRODUCTION
+                </h3>
+                <h1 class="largest-text leading-tight">
+                  I'm a Creative Developer & UI/UX Design Expert
+                </h1>
+              </div>
+            </section>
+
+            <!-- RESUME SECTION -->
+            <section id="resume-section"></section>
+          </div>
+
+          <!-- RIGHT SIDEBAR -->
+          <div class="right-sb flex flex-col items-center relative">
+            <div class="vertical-texts absolute top-10 z-10 min-h-max">
+              © design by themefisher developed by gethugothemes
+            </div>
+            <img
+              src="img/left-rectangle.png"
+              alt="_"
+              class="-scale-x-100 pt-40"
+            />
+          </div>
+        </div>
+      </main>
+    </div>
 
     <script src="./js/scripts.js"></script>
   </body>
