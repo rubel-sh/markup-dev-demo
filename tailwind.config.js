@@ -27,6 +27,9 @@ module.exports = {
       fontSize: {
         "fluid-28-48": "var(--fluid-28-48)",
         "fluid-25-32": "var(--fluid-25-32)",
+        "fluid-10-16": "var(--fluid-10-16)",
+        "fluid-18-24": "var(--fluid-18-24)",
+        "fluid-16-20": "var(--fluid-16-20)",
       },
       spacing: {
         sidebar: "var(--sidebar-spacing)",

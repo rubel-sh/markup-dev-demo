@@ -4,11 +4,11 @@
 
 @layer components {
   .container {
-    @apply max-w-[1340px] mx-auto bg-primary-bg;
+    @apply max-w-[1320px] mx-auto bg-primary-bg;
   }
 
   .scroll-container {
-    @apply pl-6 pt-5 pr-3 lg:pl-12 lg:pt-10 lg:pr-9;
+    @apply pl-6 pt-5 pr-3 lg:pl-12 lg:pt-10 lg:pr-9 space-y-32;
   }
 
   .largest-text {
@@ -42,6 +42,10 @@
     font-weight: 700;
     font-size: 1rem;
     display: inline-block;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-[#F5BD4D] to-[#F89222];
   }
 
   .gradient-text {

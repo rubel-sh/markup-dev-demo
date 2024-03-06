@@ -41,3 +41,16 @@ body {
 .right-sb {
   background-image: url("img/left-rectangle.png");
 }
+
+.section-title {
+  @apply largest-text mb-10;
+}
+
+// SKILLS SECTION
+.skill-title {
+  @apply flex justify-between mb-2;
+}
+
+.skill-progress {
+  @apply h-2 md:h-4 w-full bg-[#5a3f1c] rounded-lg;
+}
