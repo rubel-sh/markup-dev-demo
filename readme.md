@@ -2,7 +2,7 @@
 
 - https://github.com/tailwindlabs/tailwindcss-jit
 
-# Responsive Design Pattern
+# Responsive Design Tools
 
 - Responsive Font sizes: https://utopia.fyi/type/calculator
 
@@ -23,7 +23,7 @@ pnpm dev // or npm run dev
 Generate build files for production server
 
 ```sh
-pnpm prod // or npm run prod
+pnpm build // or npm run build
 ```
 
 All dev files are present in `src` folder. The build version can be found in `build` folder after running `yarn build` command.
