@@ -148,3 +148,51 @@ textarea {
   border: 2px solid #f8912250;
   @apply bg-black rounded-lg w-full py-3 focus:outline-none  focus:border-[#f7a131e3] focus:ring-0;
 }
+
+// <!-- RESUME SECTION -->
+.resume-section-title {
+  @apply flex items-center gap-x-2 text-lg md:text-2xl font-bold mb-5 md:mb-8;
+}
+
+.resume-section-history-container {
+  @apply relative pl-6 space-y-3 lg:space-y-6;
+}
+
+.resume-section-history-container::before {
+  content: "";
+  border: 2px solid #646464;
+  @apply absolute inset-y-0 left-0 h-full w-[8px] rounded-lg;
+}
+
+.resume-section-history-item {
+  @apply py-2;
+}
+
+.resume-section-history-item > .resume-card-timespan {
+  border: 1.5px solid #454948;
+  @apply p-[6px] text-sm font-bold inline-block rounded-md leading-none mb-3 relative;
+}
+
+.resume-section-history-item > .resume-card-timespan::before {
+  content: "";
+  border: 2px solid #6e6c6c;
+  @apply absolute -left-[29px] z-10 w-4 h-4 skew-x-12 transform
+    rotate-[140deg] bg-primary-bg;
+}
+
+.resume-section-history-card {
+  border: 1.5px solid #292b2b;
+  @apply p-2 lg:p-5 rounded-lg;
+}
+
+.resume-section-history-card > .resume-section-history-card-title {
+  @apply text-base md:text-lg font-bold mb-2;
+}
+
+.resume-section-history-card > .resume-section-history-card-subtitle {
+  @apply text-[#8F8F8F] text-xs;
+}
+
+.resume-section-history-card > .resume-section-history-card-desc {
+  // @apply;
+}
