@@ -96,7 +96,7 @@ body {
 //  <!-- PRICING SECTION -->
 
 .pricing-container {
-  @apply grid lg:grid-cols-2 gap-6;
+  @apply grid xl:grid-cols-2 gap-6;
 }
 
 .pricing-container > .pricing-card {
@@ -124,4 +124,23 @@ body {
   .pricing-desc-list
   > .pricing-desc-list-inactive {
   @apply text-[#979797] line-through;
+}
+
+// <!-- CONTACT SECTION -->
+.contact-form-container {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-8;
+}
+
+.contact-form-container > .form-cell {
+  @apply flex flex-col gap-y-2 items-start;
+}
+
+.contact-form-container > .form-cell > label {
+  @apply text-base md:text-[20px] font-medium mb-2;
+}
+
+.contact-form-container > .form-cell > input,
+textarea {
+  border: 2px solid #f8912250;
+  @apply bg-black rounded-lg w-full py-3 focus:outline-none  focus:border-[#f7a131e3] focus:ring-0;
 }
