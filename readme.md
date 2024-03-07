@@ -1,11 +1,3 @@
-# Credit to Gulp with TailwindCSS Starter Kit
-
-- https://github.com/tailwindlabs/tailwindcss-jit
-
-# Responsive Design Tools
-
-- Responsive Font sizes: https://utopia.fyi/type/calculator
-
 ## Quick Start
 
 Install dev dependencies
@@ -25,6 +17,10 @@ Generate build files for production server
 ```sh
 pnpm build // or npm run build
 ```
+
+# Responsive Design Tools
+
+- Responsive Font sizes: https://utopia.fyi/type/calculator
 
 All dev files are present in `src` folder. The build version can be found in `build` folder after running `yarn build` command.
 
