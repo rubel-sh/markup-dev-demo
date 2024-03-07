@@ -38,7 +38,7 @@ body {
 }
 
 .navs {
-  @apply flex justify-between items-center bg-[#121414];
+  @apply flex justify-between items-center bg-heading-color;
 }
 
 // <!-- RIGHT SIDEBAR -->
@@ -120,7 +120,7 @@ body {
 }
 
 .pricing-container > .pricing-card .pricing-desc-list {
-  @apply bg-[#121414]  py-6 px-4 space-y-2 md:space-y-4 text-base;
+  @apply bg-heading-color py-6 px-4 space-y-2 md:space-y-4 text-base;
 }
 
 .pricing-container
@@ -182,11 +182,11 @@ textarea {
 
 .resume-section-history-card {
   border: 1.5px solid #292b2b;
-  @apply p-2 lg:p-5 rounded-lg;
+  @apply p-2 lg:p-5 rounded-lg bg-heading-color;
 }
 
 .resume-section-history-card > .resume-section-history-card-title {
-  @apply text-base md:text-lg font-bold mb-2;
+  @apply text-base md:text-lg font-bold;
 }
 
 .resume-section-history-card > .resume-section-history-card-subtitle {
