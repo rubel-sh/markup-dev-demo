@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+// REUSEABLE CLASS COMPONENTS
 @layer components {
   .container {
     @apply max-w-[1320px] mx-auto bg-primary-bg;
