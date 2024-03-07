@@ -159,13 +159,13 @@ textarea {
 }
 
 .resume-section-history-container {
-  @apply relative pl-6 space-y-3 lg:space-y-6;
+  @apply relative pl-10 space-y-3 lg:space-y-6;
 }
 
 .resume-section-history-container::before {
   content: "";
   border: 2px solid #646464;
-  @apply absolute inset-y-0 left-0 h-full w-[8px] rounded-lg;
+  @apply absolute inset-y-0 left-2 h-full w-[8px] rounded-lg;
 }
 
 .resume-section-history-item {
@@ -180,7 +180,7 @@ textarea {
 .resume-section-history-item > .resume-card-timespan::before {
   content: "";
   border: 2px solid #6e6c6c;
-  @apply absolute -left-[29px] z-10 w-4 h-4 skew-x-12 transform
+  @apply absolute -left-[36.5px] z-10 w-4 h-4 skew-x-12 transform
     rotate-[140deg] bg-primary-bg;
 }
 
