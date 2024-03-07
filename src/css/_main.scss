@@ -78,11 +78,15 @@ body {
 }
 
 .masonary-grid-container {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+  @apply grid grid-cols-1 md:grid-cols-2 gap-x-5;
 }
 
 .masonary-grid-col {
-  @apply grid gap-4;
+  @apply grid gap-5;
+}
+
+.masonary-grid-blog-col {
+  @apply flex flex-col gap-y-10;
 }
 
 .masonary-grid-item {
@@ -127,7 +131,7 @@ body {
   > .pricing-card
   .pricing-desc-list
   > .pricing-desc-list-inactive {
-  @apply text-[#979797] line-through;
+  @apply text-blog-summary line-through;
 }
 
 // <!-- CONTACT SECTION -->
@@ -191,4 +195,35 @@ textarea {
 
 .resume-section-history-card > .resume-section-history-card-subtitle {
   @apply text-[#8F8F8F] text-xs;
+}
+
+// <!-- BLOG SECTION -->
+
+.blog-card-desc {
+  @apply p-4 md:p-6 bg-black;
+}
+
+.blog-card-desc > .blog-publish-time {
+  @apply text-[#747474] text-xs  mb-2;
+}
+
+.blog-card-desc > .blog-title {
+  @apply text-lg font-bold mb-4;
+}
+
+.blog-card-desc > .blog-summary {
+  @apply text-sm text-blog-summary mb-4 lg:mb-6;
+}
+
+.blog-card-desc > .blog-author {
+  @apply text-sm relative ml-6 inline-block min-w-max;
+
+  &::before {
+    content: "";
+    @apply absolute h-[1.5px] w-4 gradient-bg inset-y-0 top-1/2 -left-6;
+  }
+  &::after {
+    content: "";
+    @apply absolute h-[1.5px] w-4 gradient-bg inset-y-0 top-1/2 -right-6;
+  }
 }

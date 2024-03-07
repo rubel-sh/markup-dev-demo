@@ -24,6 +24,7 @@ module.exports = {
         "primary-bg": "var(--primary-bg)",
         "card-bg": "var(--card-bg)",
         "heading-color": "var(--heading-color)",
+        "blog-summary": "var(--blog-summary)",
       },
       fontSize: {
         "fluid-28-48": "var(--fluid-28-48)",
