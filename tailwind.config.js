@@ -25,6 +25,8 @@ module.exports = {
         "card-bg": "var(--card-bg)",
         "heading-color": "var(--heading-color)",
         "blog-summary": "var(--blog-summary)",
+        "gradient-yellow-start": "var(--gradient-yellow-start)",
+        "gradient-yellow-stop": "var(--gradient-yellow-stop)",
       },
       fontSize: {
         "fluid-28-48": "var(--fluid-28-48)",

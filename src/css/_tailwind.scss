@@ -20,41 +20,26 @@
     @apply text-fluid-25-32 font-bold;
   }
 
-  .gradient-outline-btn {
-    --gradient-color-start: #f5bd4d;
-    --gradient-color-end: #f89222;
-
-    background-color: black;
-    color: transparent;
-    background-clip: text;
-    background-image: linear-gradient(
-      to right,
-      var(--gradient-color-start),
-      var(--gradient-color-end)
-    );
-    border: 1px solid transparent;
+  .gradient-border {
+    border: 2px solid transparent;
     border-image: linear-gradient(
-      to right,
-      var(--gradient-color-start),
-      var(--gradient-color-end)
-    );
-    border-image-slice: 1;
-    padding: 12px 24px;
-    font-weight: 700;
-    font-size: 1rem;
-    display: inline-block;
+        45deg,
+        var(--gradient-yellow-start),
+        var(--gradient-yellow-stop)
+      )
+      1;
   }
 
   .gradient-bg {
-    @apply bg-gradient-to-r from-[#F5BD4D] to-[#F89222];
+    @apply bg-gradient-to-r from-gradient-yellow-start to-gradient-yellow-stop;
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-[#F5BD4D] to-[#F89222] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-gradient-yellow-start to-gradient-yellow-stop bg-clip-text text-transparent;
   }
 
   .gradient-filled-btn {
-    @apply bg-gradient-to-tr from-[#F5BD4D] to-[#F89222] p-[1px] grid place-items-center;
+    @apply bg-gradient-to-tr from-gradient-yellow-start to-gradient-yellow-stop p-[1px] grid place-items-center;
     span {
       @apply text-white block px-6 py-3 text-base font-bold;
     }
