@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Daryl Smith UI/UX Developer" />
+    <meta
+      name="keywords"
+      content="UI/UX, Developer, mockup developer, frontend"
+    />
+    <meta name="author" content="Daryl Smith" />
     <title>Daryl Smith | UI/UX designer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -113,10 +119,39 @@
             <div class="">Home</div>
           </div>
 
-          <button class="gradient-border px-3 lg:px-5 py-1 lg:py-2">
-            <span class="gradient-text font-bold">Talk To Me</span>
+          <button class="gradient-outlined-btn">
+            <div
+              class="min-w-max rounded-full bg-heading-color px-6 py-1.5 text-xl font-bold text-white"
+            >
+              <div
+                class="from-gradient-yellow-start to-gradient-yellow-stop bg-gradient-to-r bg-clip-text text-transparent"
+              >
+                Talk To Me
+              </div>
+            </div>
           </button>
         </nav>
+
+        <!-- Mobile Navbar -->
+        <header class="sticky top-0 z-20">
+          <nav
+            class="px-6 h-16 bg-heading-color md:hidden flex items-center justify-between"
+          >
+            <a href="#" class="">
+              <div class="flex flex-col leading-none">
+                <div class="logo-text">
+                  Daryl <span class="gradient-text">Smith</span>
+                </div>
+                <span class="text-xs md:text-lg text-[#C2C2C2]"
+                  >UI/UX designer</span
+                >
+              </div>
+            </a>
+            <div class="hamburger-menu">
+              <img src="img/icons/hamburger.svg" alt="" />
+            </div>
+          </nav>
+        </header>
 
         <div class="grid grid-cols-[1fr_auto]">
           <div class="scroll-container">
@@ -126,11 +161,11 @@
                 <h3 class="gradient-text font-bold text-sm md:text-base mb-2">
                   INTRODUCTION
                 </h3>
-                <h1 class="largest-text leading-tight mb-4">
+                <h1 class="largest-text leading-tight mb-2 md:mb-4">
                   I'm a Creative Developer & UI/UX Design Expert
                 </h1>
 
-                <p class="mb-9 text-fluid-10-16">
+                <p class="mb-4 md:mb-9 text-fluid-10-16">
                   24 years / Robert Smith / UK London
                 </p>
 

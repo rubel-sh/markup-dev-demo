@@ -9,7 +9,7 @@
   }
 
   .scroll-container {
-    @apply pl-6 lg:pl-12  pt-5 pr-3 lg:pt-10 lg:pr-9 space-y-16 lg:space-y-32 pb-40;
+    @apply pl-6 lg:pl-12  pt-5 pr-4 lg:pt-10 lg:pr-9 space-y-16 lg:space-y-32 pb-40;
   }
 
   .sidebar-width {
@@ -36,22 +36,16 @@
     @apply text-fluid-25-32 font-bold;
   }
 
-  .gradient-border {
-    border: 2px solid transparent;
-    border-image: linear-gradient(
-        45deg,
-        var(--gradient-yellow-start),
-        var(--gradient-yellow-stop)
-      )
-      1;
-  }
-
   .gradient-bg {
     @apply bg-gradient-to-r from-gradient-yellow-start to-gradient-yellow-stop;
   }
 
   .gradient-text {
     @apply bg-gradient-to-r from-gradient-yellow-start to-gradient-yellow-stop bg-clip-text text-transparent;
+  }
+
+  .gradient-outlined-btn {
+    @apply inline-block rounded-full bg-gradient-to-tr  from-gradient-yellow-start to-gradient-yellow-stop  p-[2px];
   }
 
   .gradient-filled-btn {

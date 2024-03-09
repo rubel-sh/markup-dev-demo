@@ -5,13 +5,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: all 300ms ease;
+  // transition: all 300ms ease;
 }
 
 img {
   max-width: 100%;
   display: block;
 }
+
 // CUSTOM SCROLLBAR
 ::-webkit-scrollbar {
   @apply w-1 lg:w-2;
@@ -35,16 +36,20 @@ body {
   background-image: url("/img/bg_lines.png");
   background-size: cover;
   background-repeat: repeat-y;
-  background-color: var(--primary-bg);
-
-  @apply fixed inset-0 -z-10;
+  @apply fixed inset-0 -z-10 bg-primary-bg;
 }
 
 .section-title-observer {
   @apply absolute -top-14 -left-28 text-8xl font-bold z-10 text-[#232424] min-1340:block hidden;
 }
 
+// <!-- Header / Navs -->
+.hamburger-menu {
+  @apply cursor-pointer;
+}
+
 // <!-- PROFILE SECTION -->
+
 .logo-container {
   @apply min-w-max flex items-center res-header-height sidebar-width-pl bg-heading-color border-r border-[#353535];
 }
@@ -58,7 +63,7 @@ body {
 }
 
 .navs {
-  @apply flex justify-between items-center bg-heading-color;
+  @apply justify-between items-center bg-heading-color hidden md:flex;
 }
 
 .social-media-icons {
@@ -66,10 +71,6 @@ body {
 }
 
 // <!-- RIGHT SIDEBAR -->
-
-// .right-sb {
-//   // @apply border;
-// }
 
 .locale-container {
   @apply space-y-3;
@@ -115,7 +116,7 @@ body {
 }
 
 .masonary-grid-container {
-  @apply grid grid-cols-1 sm:grid-cols-2 gap-x-5;
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-5;
 }
 
 .masonary-grid-col {
