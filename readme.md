@@ -52,3 +52,7 @@ const plugins = {
 };
 ...
 ```
+
+## PageSpeed Result
+
+![PageSpeedResult](./misc/pagespeed_test.png)
