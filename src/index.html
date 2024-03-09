@@ -13,56 +13,108 @@
     />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
-  <body class="">
-    <div class="container white-shadow flex bg-primary-bg">
-      <!-- LEFT PROFILE SECTION -->
-      <div>
-        <a
-          href="#"
-          class="min-w-max flex items-center h-header-height pl-sidebar bg-heading-color border-r border-[#353535]"
-        >
-          <div class="flex flex-col leading-none">
-            <div class="logo-text">
-              Daryl <span class="gradient-text">Smith</span>
+  <body>
+    <div class="container white-shadow flex bg-primary-bg relative isolate">
+      <!-- SECTION TITLE OBSERVER -->
+      <div class="section-title-observer">HOME</div>
+      <div class="relative">
+        <!-- LEFT PROFILE SECTION -->
+        <div class="sticky top-0 z-10">
+          <a href="#" class="logo-container">
+            <div class="flex flex-col leading-none">
+              <div class="logo-text">
+                Daryl <span class="gradient-text">Smith</span>
+              </div>
+              <span class="text-xs md:text-lg text-[#C2C2C2]"
+                >UI/UX designer</span
+              >
             </div>
-            <span class="text-xs md:text-lg text-[#C2C2C2]"
-              >UI/UX designer</span
-            >
-          </div>
-        </a>
+          </a>
 
-        <div class="flex items-center">
-          <div class="relative w-sidebar">
-            <!-- SIDEBAR -->
-            <ul class="flex flex-col items-center">
-              <li>H</li>
-              <li>P</li>
-              <li>L</li>
-              <li>X</li>
+          <div class="flex">
+            <!-- LEFT SIDEBAR -->
+            <ul class="left-sb">
+              <li>
+                <a href="#"><img src="img/icons/home.svg" alt="Home Logo" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/icons/profile-about.svg" alt="Home Logo"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/icons/portfolio.svg" alt="Home Logo"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/icons/write.svg" alt="Home Logo"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="img/icons/message.svg" alt="Home Logo"
+                /></a>
+              </li>
+              <div class="absolute w-full left-0 bottom-0 -z-10">
+                <img src="img/left-rectangle.png" alt="_" />
+              </div>
             </ul>
-            <!-- <img src="img/left-rectangle.png" alt="_" class="pt-30 w-sidebar" /> -->
-          </div>
 
-          <!-- PROFILE PICTURE -->
-          <div class="profile-picture">
-            <img
-              src="img/profile_image.png"
-              width="368"
-              height="504"
-              class="bg-black min-w-[368px]"
-              alt="Daryl Smith"
-            />
-            <div class="social-media"></div>
+            <!-- PROFILE PICTURE -->
+            <div class="profile-picture bg-black">
+              <img
+                src="img/profile_image.png"
+                width="368"
+                height="504"
+                class="min-w-[280px] xl:min-w-[368px]"
+                alt="Daryl Smith"
+              />
+              <ul class="social-media-icons">
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="img/icons/fb.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="img/icons/linkedin.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="img/icons/pinterest.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="img/icons/twitter.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <img src="img/icons/fb.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
 
       <main class="w-full">
         <!-- NAVS -->
-        <nav class="navs h-header-height pr-sidebar">
-          <div class="home">Home</div>
-          <button class="gradient-border px-6 py-3 rounded-2xl">
-            <span class="">Talk To Me</span>
+        <nav class="navs res-header-height sidebar-width-pr">
+          <div
+            class="flex items-center gap-x-2 justify-start home text-fluid-18-24 font-bold ml-6 lg:ml-12"
+          >
+            <img src="img/icons/home2.svg" class="w-6 xl:w-full mr-1" alt="_" />
+            <div class="">Home</div>
+          </div>
+
+          <button class="gradient-border px-3 lg:px-5 py-1 lg:py-2">
+            <span class="gradient-text font-bold">Talk To Me</span>
           </button>
         </nav>
 
@@ -806,20 +858,31 @@
           </div>
 
           <!-- RIGHT SIDEBAR -->
-          <div class="right-sb flex flex-col items-center relative">
-            <div class="vertical-texts absolute top-10 z-10 min-h-max">
-              © design by themefisher developed by gethugothemes
+          <div class="relative">
+            <div
+              class="right-sb sidebar-width flex-col items-center isolate sticky top-28 hidden xl:flex"
+            >
+              <div class="vertical-texts z-10 min-h-max pt-10 mb-10">
+                © design by themefisher developed by gethugothemes
+              </div>
+              <!-- LOCALE CONTAINER -->
+              <ul class="locale-container">
+                <li class="locale-icon">Fr</li>
+                <li class="locale-icon locale-icon-active">En</li>
+              </ul>
+
+              <img
+                src="img/left-rectangle.png"
+                alt="_"
+                class="-scale-x-100 pt-40 absolute -z-10"
+              />
             </div>
-            <img
-              src="img/left-rectangle.png"
-              alt="_"
-              class="-scale-x-100 pt-40"
-            />
           </div>
         </div>
       </main>
     </div>
 
+    <div class="bg-image"></div>
     <script src="./js/scripts.js"></script>
   </body>
 </html>

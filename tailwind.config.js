@@ -39,6 +39,10 @@ module.exports = {
         sidebar: "var(--sidebar-spacing)",
         "header-height": "var(--header-height)",
       },
+
+      screens: {
+        "min-1340": "1340px",
+      },
     },
   },
   plugins: plugins,

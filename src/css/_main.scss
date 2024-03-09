@@ -5,45 +5,82 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: all 300ms ease;
 }
 
 img {
   max-width: 100%;
   display: block;
 }
+// CUSTOM SCROLLBAR
+::-webkit-scrollbar {
+  @apply w-1 lg:w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-primary-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply gradient-bg rounded-sm;
+}
 
 body {
   font-family: "DM Sans", sans-serif;
+
+  @apply overflow-x-hidden text-white pt-0 min-1340:pt-32;
+}
+
+.bg-image {
   background-image: url("/img/bg_lines.png");
   background-size: cover;
   background-repeat: repeat-y;
   background-color: var(--primary-bg);
-  overflow-x: hidden;
-  color: white;
+
+  @apply fixed inset-0 -z-10;
 }
 
-.scroll-container {
-  @apply pb-40;
+.section-title-observer {
+  @apply absolute -top-14 -left-28 text-8xl font-bold z-10 text-[#232424] min-1340:block hidden;
 }
 
 // <!-- PROFILE SECTION -->
+.logo-container {
+  @apply min-w-max flex items-center res-header-height sidebar-width-pl bg-heading-color border-r border-[#353535];
+}
 
 .left-sb {
-  // background-image: url("/img/left-rectangle.png");
-  // background-size: cover;
-  // background-repeat: repeat-y;
-  // background-color: var(--primary-bg);
+  @apply relative isolate sidebar-width flex flex-col items-center justify-center gap-y-8 xl:gap-y-11;
+}
 
-  @apply w-sidebar flex flex-col gap-y-1 items-center;
+.left-sb > li > a > img {
+  @apply w-6 xl:w-full;
 }
 
 .navs {
   @apply flex justify-between items-center bg-heading-color;
 }
 
+.social-media-icons {
+  @apply flex justify-center items-center gap-x-2 lg:gap-x-4 py-3 pb-4;
+}
+
 // <!-- RIGHT SIDEBAR -->
+
 .right-sb {
-  background-image: url("img/left-rectangle.png");
+  // @apply border;
+}
+
+.locale-container {
+  @apply space-y-3;
+}
+
+.locale-container > .locale-icon {
+  @apply w-8 h-8 rounded-full grid place-items-center font-bold bg-[#343434] text-xs cursor-pointer;
+}
+
+.locale-icon-active {
+  @apply gradient-bg;
 }
 
 .section-title {
@@ -104,7 +141,7 @@ body {
 //  <!-- PRICING SECTION -->
 
 .pricing-container {
-  @apply grid xl:grid-cols-2 gap-6;
+  @apply grid lg:grid-cols-2 gap-6;
 }
 
 .pricing-container > .pricing-card {
@@ -135,6 +172,7 @@ body {
 }
 
 // <!-- CONTACT SECTION -->
+
 .contact-form-container {
   @apply grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-8;
 }
@@ -154,8 +192,9 @@ textarea {
 }
 
 // <!-- RESUME SECTION -->
+
 .resume-section-title {
-  @apply flex items-center gap-x-2 text-lg md:text-2xl font-bold mb-5 md:mb-8;
+  @apply flex items-center gap-x-2 text-fluid-18-24 font-bold mb-5 md:mb-8;
 }
 
 .resume-section-history-container {
@@ -198,6 +237,10 @@ textarea {
 }
 
 // <!-- BLOG SECTION -->
+
+.blog-card-thumbnail > img {
+  @apply w-full;
+}
 
 .blog-card-desc {
   @apply p-4 md:p-6 bg-black;

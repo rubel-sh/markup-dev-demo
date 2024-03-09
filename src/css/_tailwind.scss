@@ -9,7 +9,23 @@
   }
 
   .scroll-container {
-    @apply pl-6 pt-5 pr-3 lg:pl-12 lg:pt-10 lg:pr-9 space-y-32;
+    @apply pl-6 lg:pl-12  pt-5 pr-3 lg:pt-10 lg:pr-9 space-y-32 pb-40;
+  }
+
+  .sidebar-width {
+    @apply w-16 xl:w-sidebar;
+  }
+
+  .sidebar-width-pl {
+    @apply pl-16 xl:pl-sidebar;
+  }
+
+  .sidebar-width-pr {
+    @apply pr-16 xl:pr-sidebar;
+  }
+
+  .res-header-height {
+    @apply h-24 xl:h-header-height;
   }
 
   .largest-text {
