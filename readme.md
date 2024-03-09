@@ -1,6 +1,6 @@
 # Live Link
 
-- mockup-dev-demo.netlify.app/
+- Link: https://mockup-dev-demo.netlify.app
 
 # Quick Start
 
