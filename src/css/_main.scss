@@ -220,10 +220,6 @@ textarea {
 .resume-section-history-item:hover .resume-card-timespan {
   border: 1.5px solid #f89e2e;
   transition: all 0.3s ease;
-  // @apply;
-}
-.resume-section-history-item:hover .resume-section-history-card {
-  @apply glossy-effect-wide;
 }
 
 .resume-section-history-item:hover .resume-card-timespan {
