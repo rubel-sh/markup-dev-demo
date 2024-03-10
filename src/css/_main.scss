@@ -150,7 +150,7 @@ body {
 }
 
 .pricing-container > .pricing-card {
-  @apply bg-black py-6 lg:py-12;
+  @apply bg-black py-6 lg:py-12 hover-offset-ring;
 }
 
 .pricing-container > .pricing-card > .pricing-cat {
@@ -216,6 +216,26 @@ textarea {
   @apply py-2;
 }
 
+.resume-section-history-item:hover .resume-section-history-card,
+.resume-section-history-item:hover .resume-card-timespan {
+  border: 1.5px solid #f89e2e;
+  transition: all 0.3s ease;
+  // @apply;
+}
+.resume-section-history-item:hover .resume-section-history-card {
+  @apply glossy-effect-wide;
+}
+
+.resume-section-history-item:hover .resume-card-timespan {
+  color: #f89e2e;
+  &::before {
+    content: "";
+    border: 2px solid #f89e2e;
+    @apply absolute -left-[36.5px] z-10 w-4 h-4 skew-x-12 transform
+      rotate-[140deg] gradient-bg;
+  }
+}
+
 .resume-section-history-item > .resume-card-timespan {
   border: 1.5px solid #454948;
   @apply p-[6px] text-sm font-bold inline-block rounded-md leading-none mb-3 relative;
@@ -242,6 +262,10 @@ textarea {
 }
 
 // <!-- BLOG SECTION -->
+
+.blog-card {
+  @apply hover-offset-ring;
+}
 
 .blog-card-thumbnail > img {
   @apply w-full;
@@ -274,5 +298,58 @@ textarea {
   &::after {
     content: "";
     @apply absolute h-[1.5px] w-4 gradient-bg inset-y-0 top-1/2 -right-6;
+  }
+}
+
+// ANIMATIONS
+.glossy-effect {
+  @apply relative overflow-hidden;
+
+  &::before {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(245, 184, 71, 0.664) 49%,
+      rgba(0, 212, 255, 0) 100%
+    );
+    @apply absolute w-10  inset-y-0 -left-10 -skew-x-12;
+  }
+
+  &:hover::before {
+    @apply left-full transition-all ease-in-out duration-500;
+  }
+}
+
+.glossy-effect-wide {
+  @apply relative overflow-hidden;
+
+  &::before {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(245, 188, 75, 0.356),
+      rgba(0, 212, 255, 0) 100%
+    );
+    @apply absolute w-40  inset-y-0 -left-48 -skew-x-12;
+  }
+
+  &:hover::before {
+    @apply left-[150%] transition-all ease-in-out duration-700;
+  }
+}
+
+.glossy-effect-white {
+  @apply relative overflow-hidden;
+
+  &::before {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgba(255, 255, 255, 0.616) 49%,
+      rgba(0, 212, 255, 0) 100%
+    );
   }
 }

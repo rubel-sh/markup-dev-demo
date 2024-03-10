@@ -55,6 +55,10 @@
     }
   }
 
+  .hover-offset-ring {
+    @apply hover:ring-1 ring-[#f6b343]/80 cursor-pointer ring-offset-primary-bg ring-offset-4 transition-all;
+  }
+
   .vertical-texts {
     writing-mode: vertical-lr;
     @apply text-[#A5A5A5] text-sm;
